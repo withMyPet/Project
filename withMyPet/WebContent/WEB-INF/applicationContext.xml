@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+ <context:annotation-config></context:annotation-config>
+<!--  <context:component-scan base-package="com.my.dao, com.my.service"></context:component-scan> -->
+<!--  <bean id="productDAO" class="com.my.dao.ProductDAOOracle"/> -->
+ <bean id="myDataSource" 
+    class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+   <property name="driverClass" 
+             value="oracle.jdbc.driver.OracleDriver"/>
+   <property name="url"        
+             value="jdbc:oracle:thin:@124.137.8.48:1521:XE"/>
+   <property name="username"   value="pet"/>
+   <property name="password"   value="pet"/>
+ </bean>
+ <!-- <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+     <property name="dataSource" ref="myDataSource" />
+    아래부분은 매핑할 xml파일이 있는 패키지경로를 설정한다.
+     <property name="typeAliasesPackage" value="com.my.vo" />
+     <property name="configLocation" 
+               value="classpath:/config/mybatis-config.xml" />
+<property name="mapperLocations" value="classpath:/config/*.xml" />
+ </bean>
+
+  <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+     <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+ </bean>
+ -->
+</beans>
