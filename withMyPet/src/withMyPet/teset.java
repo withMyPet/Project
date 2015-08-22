@@ -10,6 +10,8 @@ public class teset {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(b);
 		list.add(20);
+		
+		System.out.println("---------");
 		System.out.println(list);
 	}
 
