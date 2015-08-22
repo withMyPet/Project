@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class teset {
 
 	public static void main(String[] args) {
-		System.out.println("hello");
-		int b = 10;
+		System.out.println("Hi~ miran^^");
+		int b = 50;
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		list.add(b);
 		list.add(20);
