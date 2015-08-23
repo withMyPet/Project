@@ -15,24 +15,9 @@ public class HelloController{
 			HttpServletResponse arg1) throws Exception {
 		System.out.println("HelloController의 handleRequest()호출");
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("hello.jsp");
-		return null;
+		mav.setViewName("/hello.jsp");
+		return mav;
 	}
 	
+	
 }
-/*public class HelloController implements Controller{
-	public HelloController(){
-		System.out.println("HelloController의 생성자 호출됨");
-	}
-
-	@Override
-	public ModelAndView handleRequest(HttpServletRequest arg0,
-			HttpServletResponse arg1) throws Exception {
-		System.out.println("HelloController의 handleRequest()호출");
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("hello.jsp");
-		return null;
-	}
-
-}
-*/
