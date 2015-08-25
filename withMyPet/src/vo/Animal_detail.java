@@ -14,6 +14,18 @@ public class Animal_detail extends Animal_kind{
 		this.breed_code = breed_code;
 		this.breed_name = breed_name;
 	}
+	public int getBreed_code() {
+		return breed_code;
+	}
+	public void setBreed_code(int breed_code) {
+		this.breed_code = breed_code;
+	}
+	public String getBreed_name() {
+		return breed_name;
+	}
+	public void setBreed_name(String breed_name) {
+		this.breed_name = breed_name;
+	}
 	
 	
 
