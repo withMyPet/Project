@@ -27,6 +27,62 @@ public class Pet extends Animal_detail{
 		this.img = img;
 		this.name = name;
 		this.pet_reg_date = pet_reg_date;
+	}
+
+	public String getE_mail() {
+		return e_mail;
+	}
+
+	public void setE_mail(String e_mail) {
+		this.e_mail = e_mail;
+	}
+
+	public int getPet_no() {
+		return pet_no;
+	}
+
+	public void setPet_no(int pet_no) {
+		this.pet_no = pet_no;
+	}
+
+	public Date getBirthdate() {
+		return birthdate;
+	}
+
+	public void setBirthdate(Date birthdate) {
+		this.birthdate = birthdate;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
+	public String getImg() {
+		return img;
+	}
+
+	public void setImg(String img) {
+		this.img = img;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getPet_reg_date() {
+		return pet_reg_date;
+	}
+
+	public void setPet_reg_date(Date pet_reg_date) {
+		this.pet_reg_date = pet_reg_date;
 	}	
 	
 	
