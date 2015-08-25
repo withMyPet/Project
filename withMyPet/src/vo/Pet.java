@@ -3,13 +3,12 @@ package vo;
 import java.util.Date;
 
 public class Pet extends Animal_detail{
-
-	private String e_mail;
 	private int pet_no;
+	private String e_mail;
+	private String name;
 	private Date birthdate;
 	private char gender;
-	private String img;
-	private String name;
+	private String img;	
 	private Date pet_reg_date;
 	
 	public Pet() {

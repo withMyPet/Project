@@ -10,8 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller("/addpet.do")
 public class AddPetController {
 	@RequestMapping
-	public ModelAndView handleRequest(HttpServletRequest arg0,
-			HttpServletResponse arg1) throws Exception {
+	public ModelAndView handleRequest(HttpServletRequest arg0, HttpServletResponse arg1) throws Exception {
 		
 		arg0.setCharacterEncoding("UTF-8");
 		System.out.println("AddPetController의 handleRequest()호출");

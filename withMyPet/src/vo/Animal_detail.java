@@ -7,8 +7,8 @@ public class Animal_detail extends Animal_kind{
 	
 	public Animal_detail() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
+	
 	public Animal_detail(int animal_code, String animal_name , int breed_code, String breed_name) {
 		super(animal_code, animal_name);
 		this.breed_code = breed_code;

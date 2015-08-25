@@ -3,7 +3,6 @@ package vo;
 import java.util.Date;
 
 public class Member{
-	
 	private String e_mail;
 	private String password;
 	private String img;

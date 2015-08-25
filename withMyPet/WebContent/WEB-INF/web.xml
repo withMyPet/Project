@@ -8,10 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
-  
-    <!-- DB연결 -> MVC컨트롤러연결 을 해야한다. 그래서 비지니스로직/DB연결 등은 listener에 등록해놓는다.
-       servlet-mapping보다 contextloaderlistener가 먼저 실행된다. (작성된곳 순서와 상관없이) -->
+  </welcome-file-list>  
   <listener>
   	<listener-class>
   		org.springframework.web.context.ContextLoaderListener
